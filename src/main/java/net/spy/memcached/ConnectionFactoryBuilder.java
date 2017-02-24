@@ -89,12 +89,17 @@ public class ConnectionFactoryBuilder {
 	private ReadPriority readPriority = ReadPriority.MASTER;
 	private Map<APIType, ReadPriority> apiReadPriorityList = new HashMap<APIType, ReadPriority>();
 
+	/* Called by cache manager after checking ZK nodes */ 
+	public void internalArcusReplEnabled(boolean b) {
+		arcusReplEnabled = b;
+	}
+
+	/* Following 2 methods will be deprecated. */
 	/**
 	 * use ARCUS replication
 	 * @param enable
 	 */
 	public ConnectionFactoryBuilder setArcusReplEnabled(boolean enable) {
-		arcusReplEnabled = enable;
 		return this;
 	}
 
