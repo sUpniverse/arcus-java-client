@@ -94,15 +94,16 @@ public class ConnectionFactoryBuilder {
 		arcusReplEnabled = b;
 	}
 
-	/* Following 2 methods will be deprecated. */
 	/**
 	 * use ARCUS replication
 	 * @param enable
 	 */
+	@Deprecated
 	public ConnectionFactoryBuilder setArcusReplEnabled(boolean enable) {
 		return this;
 	}
 
+	@Deprecated
 	public boolean getArcusReplEnabled() {
 		return arcusReplEnabled;
 	}
