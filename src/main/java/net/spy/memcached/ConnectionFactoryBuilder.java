@@ -95,9 +95,9 @@ public class ConnectionFactoryBuilder {
 	}
 
 	/* @deprecated  This method is no longer needed by applicaitons.
-     * The replication cluster is internally determined by checking
-     * ZK directories for the given service code. The service code
-     * must be unique in each ZK ensemble.
+	 * The replication cluster is internally determined by checking
+	 * ZK directories for the given service code. The service code
+	 * must be unique in each ZK ensemble.
 	 */
 	@Deprecated
 	public ConnectionFactoryBuilder setArcusReplEnabled(boolean enable) {
@@ -105,9 +105,9 @@ public class ConnectionFactoryBuilder {
 	}
 
 	/* @deprecated  This method is no longer needed by applicaitons.
-     * The replication cluster is internally determined by checking
-     * ZK directories for the given service code. The service code
-     * must be unique in each ZK ensemble.
+	 * The replication cluster is internally determined by checking
+	 * ZK directories for the given service code. The service code
+	 * must be unique in each ZK ensemble.
 	 */
 	@Deprecated
 	public boolean getArcusReplEnabled() {
