@@ -94,15 +94,21 @@ public class ConnectionFactoryBuilder {
 		arcusReplEnabled = b;
 	}
 
-	/**
-	 * use ARCUS replication
-	 * @param enable
+	/* @deprecated  This method is no longer needed by applicaitons.
+     * The replication cluster is internally determined by checking
+     * ZK directories for the given service code. The service code
+     * must be unique in each ZK ensemble.
 	 */
 	@Deprecated
 	public ConnectionFactoryBuilder setArcusReplEnabled(boolean enable) {
 		return this;
 	}
 
+	/* @deprecated  This method is no longer needed by applicaitons.
+     * The replication cluster is internally determined by checking
+     * ZK directories for the given service code. The service code
+     * must be unique in each ZK ensemble.
+	 */
 	@Deprecated
 	public boolean getArcusReplEnabled() {
 		return arcusReplEnabled;
