@@ -19,7 +19,7 @@ public class MemcachedClientConstructorTest extends TestCase {
 
   protected static String ARCUS_HOST = System
           .getProperty("ARCUS_HOST",
-                  "127.0.0.1:11211");
+                  "1.255.51.181:11911");
 
   protected static boolean USE_ZK = Boolean.valueOf(System.getProperty(
           "USE_ZK", "false"));
