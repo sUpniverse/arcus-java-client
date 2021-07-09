@@ -215,6 +215,7 @@ public class ArcusReplKetamaNodeLocator extends SpyObject implements NodeLocator
       // Change role
       for (MemcachedReplicaGroup g : changeRoleGroups) {
         g.changeRole();
+        g.setMasterCandidate(null);
       }
 
       // Add memcached nodes.
